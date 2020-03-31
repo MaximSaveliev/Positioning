@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Absolute Positioning</title>
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue:700i&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #333;
+            margin: 10;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 0;
+            padding: 0;
+            line-height: 200px;
+            text-align: center;
+            font-size: 7em;
+            font-family: 'Comic Neue', cursive;;
+        }
+        #d-1{
+            
+            background-color: red;
+            color: rgb(134, 71, 170);
+        }
+        #d-2{
+            background-color: yellow;
+            position: absolute;
+            left: 110px;
+            top: 110px;
+            z-index: -1;
+            color: lightseagreen;
+        }
+        #d-3{
+            background-color: blue;
+            position: absolute;
+            left: 210px;
+            top: 210px;
+            z-index: -2;
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="d-1">1</div>
+    <div id="d-2">2</div>
+    <div id="d-3">3</div>
+
+</body>
+</html>
